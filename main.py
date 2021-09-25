@@ -25,11 +25,11 @@ print('Pack made!')
 oldOpen = ''
 oldLoop = ''
 while True:
-  if not oldOpen == open('open.txt').read():
-    oldOpen = open('open.txt').read()
+  if not oldOpen == open('open.mcfunction').read():
+    oldOpen = open('open.mcfunction').read()
     files.makeFile(name+'/data/pack/functions/startup.mcfunction', oldOpen)
     print('startup.mcfuntion updated!')
-  if not oldLoop == open('loop.txt').read():
-    oldLoop = open('loop.txt').read()
+  if not oldLoop == open('loop.mcfunction').read():
+    oldLoop = open('loop.mcfunction').read()
     files.makeFile(name+'/data/pack/functions/repeat.mcfunction', oldLoop)
     print('repeat.mcfuntion updated!')
